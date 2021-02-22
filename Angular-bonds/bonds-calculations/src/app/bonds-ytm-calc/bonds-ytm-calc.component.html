@@ -1,0 +1,15 @@
+<p>bonds-ytm-calc works!</p>
+<span>{{ title }} app is running!</span>
+<input type="text" [(ngModel)]="name">
+<p>{{ name }}</p>
+<hr>
+<span>current number is {{couunter}}</span><br>
+<button type="button" class="btn btn-primary" [disabled]="disabledButton" (click)="onAdd()">Add one!</button>
+<hr>
+<span>event capturing</span><br>
+<span>First one way bindign, input updates variable but variable doesnt update input</span>
+<input type="text" (input)="onInputUpdate($event)"><br>
+<span>two way bindign, input updates variiable and variable also updates input</span>
+<input type="text" [(ngModel)]="userText">
+<div>{{userText}}</div>
+<div *ngIf="magicStringIsTyped">Magic string is {{ magicString }}</div>
