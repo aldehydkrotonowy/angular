@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { ConvertToSpacePipe } from 'src/shared/ConvertToSpace.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +12,8 @@ import { ServersComponent } from './servers/servers.component';
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    ConvertToSpacePipe
   ],
   imports: [
     BrowserModule,
